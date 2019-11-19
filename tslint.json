@@ -89,6 +89,6 @@
   },
   "rulesDirectory": [
     "codelyzer",
-    "./src/config/lint-rules"
+    "./lint-rules"
   ]
 }

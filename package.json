@@ -4,9 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npm run lint && ng build",
     "test": "ng test",
-    "lint": "shx rm ./src/config/lint-rules/*.js && tsc ./src/config/lint-rules/*.ts --lib es6 && ng lint",
+    "lint": "shx rm -rf ./lint-rules && tsc ./src/config/lint-rules/*.ts --lib es6 --outDir ./lint-rules && ng lint",
     "e2e": "ng e2e"
   },
   "private": true,
